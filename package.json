@@ -8,19 +8,26 @@
 		"android": "expo start --android",
 		"ios": "expo start --ios",
 		"web": "expo start --web",
-		"lint:check": "bunx @biomejs/biome lint ./src/*",
-		"lint:apply": "bunx @biomejs/biome check --apply ./src/*",
+		"lint:check": "bunx @biomejs/biome lint .",
+		"lint:apply": "bunx @biomejs/biome check --apply .",
 		"ts:check": "tsc && bun run lint:check",
 		"prepare": "husky",
 		"test": "bun run ts:check",
 		"lint-staged": "lint-staged"
 	},
 	"dependencies": {
+		"@callstack/react-theme-provider": "^3.0.9",
 		"@types/react": "~18.2.45",
 		"expo": "~50.0.8",
+		"expo-constants": "~15.4.5",
+		"expo-linking": "~6.2.2",
+		"expo-router": "~3.4.8",
 		"expo-status-bar": "~1.11.1",
+		"expo-system-ui": "~2.9.3",
 		"react": "18.2.0",
 		"react-native": "0.73.4",
+		"react-native-safe-area-context": "4.8.2",
+		"react-native-screens": "~3.29.0",
 		"typescript": "^5.3.0"
 	},
 	"devDependencies": {

@@ -1,5 +1,10 @@
-import { Entry } from "@/entry";
+import Entry from "@/app";
+import { ThemeContext } from "@/theme/theme";
 
 export default function App() {
-	return <Entry />;
+	return (
+		<ThemeContext>
+			<Entry />
+		</ThemeContext>
+	);
 }
